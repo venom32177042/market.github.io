@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المتجر الإلكتروني الشامل</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-store"></i> متجرنا الشامل</h1>
+            </div>
+            
+            <div class="contact-info">
+                <div class="phone">
+                    <i class="fas fa-phone"></i>
+                    <span id="store-phone">+963 123 456 789</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" id="whatsapp-link" class="social-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" id="facebook-link" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الفئات -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">فئات المنتجات</h2>
+            <div class="categories-list" id="categories-container">
+                <!-- سيتم تعبئة الفئات من JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">منتجاتنا</h2>
+                <div class="category-filter">
+                    <select id="category-filter">
+                        <option value="all">جميع الفئات</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="products-grid" id="products-container">
+                <!-- سيتم تعبئة المنتجات من JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- نافذة تفاصيل المنتج -->
+    <div class="modal-overlay" id="product-modal-overlay">
+        <div class="product-modal">
+            <button class="close-modal" id="close-modal">&times;</button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img id="modal-product-image" src="" alt="صورة المنتج">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-product-name"></h2>
+                    <p class="modal-price" id="modal-product-price"></p>
+                    <p class="modal-description" id="modal-product-description"></p>
+                    <p class="modal-category"><strong>الفئة:</strong> <span id="modal-product-category"></span></p>
+                    
+                    <div class="modal-actions">
+                        <button class="contact-btn whatsapp-btn" id="whatsapp-contact">
+                            <i class="fab fa-whatsapp"></i> طلب عبر واتساب
+                        </button>
+                        <button class="contact-btn phone-btn" id="phone-contact">
+                            <i class="fas fa-phone"></i> اتصل للطلب
+                        </button>
+                        <button class="contact-btn facebook-btn" id="facebook-contact">
+                            <i class="fab fa-facebook-f"></i> تواصل عبر فيسبوك
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المتجر</h3>
+                    <p>متجرنا الإلكتروني الشامل يقدم لكم أفضل المنتجات بأعلى جودة وأسعار منافسة.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>طرق التواصل</h3>
+                    <p><i class="fas fa-phone"></i> الهاتف: <span id="footer-phone">+963 123 456 789</span></p>
+                    <div class="footer-social">
+                        <a href="#" id="footer-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" id="footer-facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#" id="all-products">جميع المنتجات</a></li>
+                        <li><a href="#categories-container">الفئات</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 المتجر الإلكتروني الشامل. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
